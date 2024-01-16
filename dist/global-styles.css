@@ -64,7 +64,7 @@ body {
 }
 
 .image-gallery {
-  font-size: 3em;
+  font-size: 2em;
   height: 500px;
   background-color: #FDFBF4;
   display: flex;
@@ -73,6 +73,10 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+}
+
+.image {
+  margin: 20px;
 }
 
 /*  for small screen sizes */
