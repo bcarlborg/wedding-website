@@ -1,7 +1,11 @@
+html {
+  max-width: 1200px;
+  margin: auto;
+}
+
 body {
   margin: 0;
-  font-family: Georgia, serif;
-  font-size: 1.5em;
+  font-family: serif;
 }
 
 .splash-container {
@@ -47,28 +51,68 @@ body {
 }
 
 .when-and-where-container {
+  margin: auto;
   background-color: #0055B8;
   color: #FDFBF4;
-  min-height: 65vh;
-  padding: 5%;
 }
 
-.when-and-where-container-text {
-  max-width: 500px;
+
+
+.when-and-where-header {
+  width: max-content;
 }
 
 /*  for small screen sizes */
-@media(max-width: 500px) {
+@media(max-width: 580px) {
   #splash-save-the-date {
     background-image: url("./assets/index/date-09-22-24.svg");
     background-size: 90% 80%;
   }
+
+  .when-and-where-container {
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+
+  .when-and-where {
+    margin: auto
+    max-width: 350px;
+  }
 }
 
 /*  for desktop screen sizes */
-@media(min-width: 500px) {
+@media(min-width: 580px) {
   #splash-save-the-date {
     background-image: url("./assets/index/save-the-date.svg");
     background-size: 90% 100%;
+  }
+
+  .when-and-where-container {
+    padding: 6%;
+  }
+  
+  .when-and-where {
+    max-width: 1000px;
+  }
+
+  .when-and-where-header {
+    display: none;
+  }
+
+  .when-and-where-text {
+    display: flex;
+    column-gap: 3em;
+    row-gap: 1em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .when-and-where-text-item {
+    max-width: 400px;
+    width: 200px;
+    flex-grow: 1;
   }
 }
