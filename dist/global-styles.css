@@ -10,6 +10,7 @@ body {
 
 .splash-container {
   height: 55vh;
+  max-height: 600px;
 
   position: relative;
 
@@ -62,6 +63,18 @@ body {
   width: max-content;
 }
 
+.image-gallery {
+  font-size: 3em;
+  height: 500px;
+  background-color: #FDFBF4;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
 /*  for small screen sizes */
 @media(max-width: 580px) {
   #splash-save-the-date {
@@ -77,7 +90,7 @@ body {
   }
 
   .when-and-where {
-    margin: auto
+    margin: auto;
     max-width: 350px;
   }
 }
