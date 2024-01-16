@@ -97,6 +97,10 @@ body {
     margin: auto;
     max-width: 350px;
   }
+
+  .when-and-where-text-item {
+    margin-bottom: 1em;
+  }
 }
 
 /*  for desktop screen sizes */
