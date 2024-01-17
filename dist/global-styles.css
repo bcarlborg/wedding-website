@@ -33,7 +33,7 @@ header > div {
 
   position: relative;
 
-  background-image: url("./assets/index/beau-and-tinka-field-med-quality.jpg");
+  background-image: url("./assets/index/beau-and-tinka-field-med-quality.webp");
   /*
     Background position is a bit confusing, especially with percentages,
     these two values tell us how to place the image in the container.
