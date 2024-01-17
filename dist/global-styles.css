@@ -1,11 +1,12 @@
 html {
   max-width: 1200px;
   margin: auto;
+  background-color: #FDFBF4;
 }
 
 body {
   margin: 0;
-  font-family: serif;
+  font-family: Garamond, serif;
 }
 
 .splash-container {
@@ -65,28 +66,77 @@ body {
 .image-gallery {
   font-size: 2em;
   height: 500px;
-  background-color: #FDFBF4;
   display: flex;
   width: 100%;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
-  justify-content: center;
+  overflow: scroll;
 }
 
-.image {
+.gallery-photo {
+  width: 200px;
+}
+
+.image-wrapper {
+  display: inline-block;
   margin: 20px;
 }
+
+.footer-break {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 1em;
+  background-color: #0055B8;
+}
+
+.footer-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+
+.lightbox{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in;
+
+  img {
+    width: unset; 
+    max-height: 80vh;
+    max-width: 80%;
+  }
+}
+
+.lightbox.show{
+  background-color: rgba(0,0,0, 0.85);
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+
 
 /*  for small screen sizes */
 @media(max-width: 580px) {
   .splash-container {
-    height: 40vh;
+    height: 55vh;
   }
 
   #splash-save-the-date {
     background-image: url("./assets/index/date-09-22-24.svg");
     background-size: 90% 80%;
+    max-width: 300px;
   }
 
   .when-and-where-container {
@@ -115,6 +165,7 @@ body {
   #splash-save-the-date {
     background-image: url("./assets/index/save-the-date.svg");
     background-size: 90% 100%;
+    max-width: 800px;
   }
 
   .when-and-where-container {
