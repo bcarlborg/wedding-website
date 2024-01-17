@@ -65,13 +65,14 @@ body {
 
 .image-gallery {
   font-size: 2em;
-  height: 500px;
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   overflow: scroll;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .gallery-photo {
@@ -91,6 +92,7 @@ body {
 }
 
 .footer-image {
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
