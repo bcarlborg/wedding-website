@@ -1,11 +1,17 @@
+@font-face {
+  font-family: "garamondLight";
+  src: url("./assets/CormorantGaramond-Light.woff");
+}
+
 html {
   margin: auto;
   background-color: #FDFBF4;
+  scrollbar-color: #0055B8 #FDFBF4;
 }
 
 body {
   margin: 0;
-  font-family: Garamond, serif;
+  font-family: "garamondLight", Garamond, serif;
   font-size: 1.3em;
 }
 
@@ -76,8 +82,6 @@ header > div {
   color: #FDFBF4;
 }
 
-
-
 .when-and-where-header {
   width: max-content;
 }
@@ -139,6 +143,7 @@ header > div {
 
   img {
     width: unset; 
+    height: 80vh;
     max-height: 80vh;
     max-width: 80%;
   }
@@ -176,6 +181,10 @@ header > div {
   .when-and-where-text-item {
     margin-bottom: 1em;
   }
+
+  .when-and-where-date {
+    display: none;
+  }
 }
 
 /*  for desktop screen sizes */
@@ -191,7 +200,10 @@ header > div {
   }
 
   .when-and-where-container {
-    padding: 4em;
+    padding-top: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 1em;
   }
   
   .when-and-where {
@@ -204,7 +216,7 @@ header > div {
 
   .when-and-where-text {
     display: flex;
-    column-gap: 3em;
+    column-gap: 50px;
     row-gap: 1em;
     flex-direction: row;
     justify-content: space-evenly;
@@ -212,8 +224,16 @@ header > div {
   }
 
   .when-and-where-text-item {
-    max-width: 400px;
+    max-width: 500px;
     width: 200px;
     flex-grow: 1;
+  }
+
+  .when-and-where-date {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
 }
