@@ -7,12 +7,13 @@ html {
   margin: auto;
   background-color: #FDFBF4;
   scrollbar-color: #0055B8 #FDFBF4;
+  color: #FDFBF4;
 }
 
 body {
   margin: 0;
   font-family: "garamondLight", Garamond, serif;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 main {
@@ -27,6 +28,7 @@ footer {
 
 header {
   background-color: #0055B8;
+  font-size: 1.2rem;
 }
 
 header > div {
@@ -79,7 +81,6 @@ header > div {
 .when-and-where-container {
   margin: auto;
   background-color: #0055B8;
-  color: #FDFBF4;
 }
 
 .when-and-where-header {
@@ -107,6 +108,35 @@ header > div {
   margin: 20px;
 }
 
+.weekend-schedule {
+  margin: auto;
+  max-width: 1500px;
+  background-color: #0055B8;
+}
+
+.weekend-schedule--title {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.weekend-schedule--items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 100px;
+  max-width: 1500px;
+}
+
+.weekend-schedule--item {
+  max-width: 325px;
+}
+
+.weekend-schedule--item--address {
+  font-style: italic;
+}
+
 .footer-break {
   width: 100%;
   height: 2px;
@@ -125,7 +155,6 @@ header > div {
 .footer-image {
   width: 100px;
 }
-
 
 .lightbox{
   opacity: 0;
@@ -185,6 +214,10 @@ header > div {
   .when-and-where-date {
     display: none;
   }
+
+  .weekend-schedule {
+    padding: 1em;
+  }
 }
 
 /*  for desktop screen sizes */
@@ -235,5 +268,9 @@ header > div {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+  }
+
+  .weekend-schedule {
+    padding: 40px;
   }
 }
